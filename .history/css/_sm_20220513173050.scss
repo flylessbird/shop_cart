@@ -1,0 +1,22 @@
+@media only screen and (max-width: 600px) {
+  .ship_total {
+    .ship {
+      select,
+      input {
+        width: 100%;
+      }
+      .zip {
+        margin-left: 0;
+      }
+      button {
+        width: 100%;
+      }
+    }
+    .total {
+      table {
+        width: 100%;
+      }
+    }
+  }
+
+}

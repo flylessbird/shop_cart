@@ -1,0 +1,18 @@
+@import "reset";
+@import "var";
+@import "mixin";
+.ft {
+  .text {
+    font-size: 14px;
+    .copy {
+      color: $grey_copy;
+    }
+    .theme {
+    color: $blue;
+    }
+  }
+  .ft_option {
+  }
+  img {
+  }
+}

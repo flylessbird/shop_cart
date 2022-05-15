@@ -1,0 +1,31 @@
+@import "reset";
+@import "var";
+@import "mixin";
+.ft {
+  display: flex;
+  font-size: 14px;
+
+  .text {
+    .copy {
+      color: $grey_copy;
+    }
+    .theme {
+      color: $blue_theme;
+    }
+  }
+  .ft_option {
+    margin-left: 194px;
+    color: $grey_ava;
+    li {
+      padding: 21px;
+      border: 1px solid #000;
+      list-style-type: none;
+      &:not(:nth-child(4)) {
+        // border-right: 1px solid $grey_ava;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

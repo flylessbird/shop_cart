@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&family=Source+Sans+Pro:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="/fontawesome/css/all.min.css"> -->
+    <link rel="stylesheet" href="/css/page_test.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav" id="topnav">
+        <ul class="logo">
+          <li>
+            <a href="#" class="side"><img src="/img/logo.png" alt="" /></a>
+          </li>
+          <li><a href="#" class="side gem">thegem</a></li>
+        </ul>
+        <ul class="logo_list1">
+          <li><a href="#" class="mid">home</a></li>
+          <li><a href="#" class="mid">pages</a></li>
+          <li><a href="#" class="mid">blog</a></li>
+          <li><a href="#" class="mid">portfolio</a></li>
+          <li><a href="#" class="mid">shop</a></li>
+          <li><a href="#" class="mid">features</a></li>
+          <li><a href="#" class="mid">elements</a></li>
+        </ul>
+
+        <ul class="logo_list2">
+          <li>
+            <a href="" class="side"><img src="/img/uk.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="" class="side"><img src="/img/search.png" /></a>
+          </li>
+          <li class="shop_tag">
+            <a href=""><i class="fa fa-shopping-cart"></i></a>
+            <div class="tag">
+              <span class="triangle"></span>
+              <span class="square"></span>
+              </div>  
+          </li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    
+      </nav>
+      <section class="table">
+        <h2>you have<span> 6 items </span>in your cart</h2>
+        <table class="detail">
+          <tr class="head">
+            <th></th>
+            <th class="product_head"><span>product</span></th>
+            <th><span>price</span></th>
+            <th><span class="quantity_head">quantity</span></th>
+            <th><span>total</span></th>
+          </tr>
+
+          <tr class="row">
+            <td>
+              <div class="close_cell"><span class="close_btn">x</span></div>
+            </td>
+            <td class="product_col">
+              <div class="content">
+                <span class="square"></span>
+                <p class="text">
+                  <span class="blue">Lorem ipsum dolor sit amet</span>
+                  <span class="grey">size: large, color: black</span>
+                </p>
+              </div>
+            </td>
+            <td class="price_col">
+              <span class="price">$35.99</span>
+            </td>
+            <td class="quantity_col">
+              <div class="quantity">
+                <div class="minus"><span>-</span></div>
+                <input class="item"></input>
+                <div class="plus"><span>+</span></div>
+              </div>
+            </td>
+            <td class="total_col"><span class="total">$35.99</span></td>
+          </tr>
+          <tr class="row">
+            <td>
+              <div class="close_cell"><span class="close_btn">x</span></div>
+            </td>
+            <td class="product_col">
+              <div class="content">
+                <span class="square"></span>
+                <p class="text">
+                  <span class="blue">Consectetur adipisicing</span>
+                </p>
+              </div>
+            </td>
+            <td class="price_col">
+              <span class="price">$1285.99</span>
+            </td>
+            <td class="quantity_col">
+              <div class="quantity">
+                <div class="minus"><span>-</span></div>
+                <input class="item"></input>
+                <div class="plus"><span>+</span></div>
+              </div>
+            </td>
+            <td class="total_col"><span class="total">$1285.99</span></td>
+          </tr>
+          <tr class="row">
+            <td>
+              <div class="close_cell"><span class="close_btn">x</span></div>
+            </td>
+            <td class="product_col">
+              <div class="content">
+                <span class="square"></span>
+                <p class="text">
+                  <span class="blue">Elit sed do eiusmod</span>
+                  <span class="grey">size: large</span>
+                </p>
+              </div>
+            </td>
+            <td class="price_col">
+              <span class="price">$89.99</span>
+            </td>
+            <td class="quantity_col">
+              <div class="quantity">
+                <div class="minus"><span>-</span></div>
+                <input class="item"></input>
+                <div class="plus"><span>+</span></div>
+              </div>
+            </td>
+            <td class="total_col"><span class="total">$89.99</span></td>
+          </tr>
+          <tr class="row">
+            <td>
+              <div class="close_cell"><span class="close_btn">x</span></div>
+            </td>
+            <td class="product_col">
+              <div class="content">
+                <span class="square"></span>
+                <p class="text">
+                  <span class="blue">Tempor incididunt ut labore</span>
+                </p>
+              </div>
+            </td>
+            <td class="price_col">
+              <span class="price">$12.00</span>
+            </td>
+            <td class="quantity_col">
+              <div class="quantity">
+                <div class="minus"><span>-</span></div>
+                <input class="item"></input>
+                <div class="plus"><span>+</span></div>
+              </div>
+            </td>
+            <td class="total_col"><span class="total">$12.00</span></td>
+          </tr>
+          <tr class="row">
+            <td>
+              <div class="close_cell"><span class="close_btn">x</span></div>
+            </td>
+            <td class="product_col">
+              <div class="content">
+                <span class="square"></span>
+                <p class="text">
+                  <span class="blue">Et dolore magna aliqua</span>
+                </p>
+              </div>
+            </td>
+            <td class="price_col">
+              <span class="price">$158.25</span>
+            </td>
+            <td class="quantity_col">
+              <div class="quantity">
+                <div class="minus"><span>-</span></div>
+                <input class="item"></input>
+                <div class="plus"><span>+</span></div>
+              </div>
+            </td>
+            <td class="total_col"><span class="total">$158.25</span></td>
+          </tr>
+          <tr class="last_row">
+            <td colspan="5">
+              <div class="btn">
+                <input type="text" placeholder="enter coupon code here.." />
+                <button class="apply">apply</button>
+                <button class="cart">update cart</button>
+                <button class="checkout"><img src="/img/check_item.png" alt=""><span>checkout</span></button>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section class="ship_total">
+        <div class="ship">
+          <h2>calculate shipping</h2>
+          <table>
+            <form action="">
+              <tr>
+                <td colspan="2">
+                  <select name="" >
+                    <option value="" disabled selected hidden>
+                      Select Your Country
+                    </option>
+                    <option value="Vietnam">Vietnam</option>
+                    <option value="India">India</option>
+                    <option value="Japan">Japan</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" placeholder="State/Country" />
+                </td>
+                <td>
+                  <input class="zip" type="text" placeholder="Postcode/Zip" />
+                </td>
+              </tr>
+              <tr>
+                <td><button>update totals</button></td>
+              </tr>
+            </form>
+          </table>
+        </div>
+        <div class="total">
+          <h2>cart totals</h2>
+          <table>
+            <tr>
+              <td class="left">subtotal</td>
+              <td class="right subtotal_price">$1285.99</td>
+            </tr>
+            <tr>
+              <td class="left">shipping and handling</td>
+              <td class="right">
+                <label class="ship_handle"
+                  ><p>flat rate: $3.99</p>
+                  <input type="radio" checked="checked" name="radio" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="ship_handle second"
+                  ><p>free shipping</p>
+                  <input type="radio" name="radio" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="ship_handle"
+                  ><p>flat rate: $12.99</p>
+                  <input type="radio" name="radio" />
+                  <span class="checkmark"></span>
+                </label>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="left">total</td>
+              <td class="right total_price">$2015.00</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section class="product">
+        <h2>you may be interested in<span></span></h2>
+        <div class="cards">
+          <div class="card">
+            <div class="square"></div>
+            <div class="content">
+              <p class="name">denim classy shorts</p>
+              <p class="price">$35.00-$89.99</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="square">
+              <div class="badget">
+                <div class="sale">sale!</div>
+                <div class="new">new</div>
+              </div>
+            </div>
+            <div class="content">
+              <p class="name">golden heels</p>
+              <p class="price">$89.99</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="square"></div>
+            <div class="content">
+              <p class="name">black impression</p>
+              <p class="price">$259.99</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="square"></div>
+            <div class="content">
+              <p class="name">denim classy shorts</p>
+              <p class="price">$35.00-$89.99</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="square"></div>
+            <div class="content">
+              <p class="name">golden heels</p>
+              <p class="price">$89.99</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="square"></div>
+            <div class="content">
+              <p class="name">black impression</p>
+              <p class="price">$259.99</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="ft">
+        <div class="text">
+          <span class="copy">&copy; Copyright 2015</span>
+          <span class="theme">CodexThemes</span>
+        </div>
+        <ul class="ft_option">
+          <li><a href="#">support</a></li>
+          <li><a href="#">contact us</a></li>
+          <li><a href="#">disclaimer</a></li>
+          <li><a href="#">privacy policy</a></li>
+        </ul>
+        <img src="/img/social.png" alt="" />
+      </footer>
+    </div>
+    <script src="/js/nav.js"></script>
+  </body>
+</html>

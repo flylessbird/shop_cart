@@ -1,0 +1,37 @@
+@import "reset";
+@import "var";
+@import "mixin";
+.ft {
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+align-items: center;
+  .text {
+    .copy {
+      color: $grey_copy;
+    }
+    .theme {
+      color: $blue_theme;
+    }
+  }
+  .ft_option {
+    margin-left: 194px;
+    li {
+      padding: 21px;
+      border: 1px solid #000;
+      list-style-type: none;
+      display: inline-block;
+      &:not(:nth-child(4)) {
+        // border-right: 1px solid $grey_ava;
+      }
+      a {
+        color: $grey_ava;
+        border: 1px solid #000;
+        text-decoration: none;
+      }
+    }
+  }
+  img {
+    margin-left: 185px;
+  }
+}
