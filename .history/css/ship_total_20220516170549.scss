@@ -1,0 +1,160 @@
+@import "reset";
+@import "var";
+@import "mixin";
+%flex {
+  display: flex;
+}
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%flex-center-wrap {
+  @extend %flex-center;
+  flex-wrap: wrap;
+}
+.ship_total {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 44px;
+  margin-top: 108px;
+
+  .ship {
+    margin-bottom: 50px;
+    select,
+    input {
+      color: $grey_input_ship;
+      padding: 14px 17px;
+      border: 1px solid $grey_bd;
+    }
+    select {
+      width: 100%;
+    }
+    input {
+      margin: 0;
+      margin-top: 18px;
+
+      width: 275px;
+      &::placeholder {
+        color: $grey_input_ship;
+      }
+    }
+    .zip {
+      margin-left: 18px;
+    }
+    button {
+      margin-top: 18px;
+      width: 210px;
+      padding: 12px 0;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 19px;
+      color: $blue;
+      border: 2px solid $blue;
+      background: $white;
+      border-radius: 3px;
+
+      &:hover {
+        cursor: pointer;
+        background: $blue;
+        color: $white;
+      }
+    }
+  }
+  .total {
+    table {
+      width: 568px;
+    }
+
+    .left {
+      width: 50%;
+      padding: px 25px;
+      color: $grey_text_total;
+    }
+    .right {
+      padding-left: 23px;
+      color: $grey_text_total;
+    }
+    .ship_handling {
+      // padding: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .ship_handle {
+      display: block;
+      position: relative;
+      cursor: pointer;
+      font-size: 14px;
+      text-transform: capitalize;
+    }
+    .second {
+      margin: 16px 0;
+    }
+    p {
+      margin-left: 23px;
+    }
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    .checkmark {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+
+      background-color: $grey_radio;
+      @include circle(14px);
+      /* display: none; */
+    }
+
+    input:checked ~ .checkmark {
+      background-color: $grey_radio;
+    }
+
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+    }
+
+    input:checked ~ .checkmark:after {
+      display: block;
+    }
+
+    .checkmark:after {
+      @include circle(8px);
+      background: $white;
+    }
+    .left {
+      font-size: 16px;
+      background: $grey_bg_total;
+    }
+    .right {
+      font-size: 14px;
+    }
+    .subtotal_price {
+      font-size: 20px;
+    }
+    .total_price {
+      font-size: 24px;
+    }
+
+    table,
+    tr,
+    td {
+      // border: 1px solid $grey_bd;
+      border: 1px solid $grey_bd;
+      border-collapse: collapse;
+    }
+  }
+}
+@import "md";
+@import "sm";
