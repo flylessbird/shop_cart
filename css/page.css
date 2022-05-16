@@ -18,10 +18,17 @@ h2 {
   margin-bottom: 55px;
 }
 
-.flex, .product .cards .card .square .new, .product .cards .card .square .sale, .product .cards {
+.table .detail .last_row .btn, .logo_list2 .shop_tag .tag, .logo_list2 .shop_tag {
+  display: flex;
+}
+
+.table .detail .last_row .btn .checkout, .table .detail .row .quantity_col .quantity div, .table .detail .row .close_cell, .logo, .nav ul, .nav, .ft, .product .cards .card .square .new, .product .cards .card .square .sale, .product .cards, .product {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.ft, .product .cards .card .square .new, .product .cards .card .square .sale, .product .cards, .product {
   flex-wrap: wrap;
 }
 
@@ -30,17 +37,11 @@ h2 {
   text-transform: uppercase;
   overflow: hidden;
   padding: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0 auto;
   border-top: 1px solid #dfe5e8;
   border-bottom: 1px solid #dfe5e8;
 }
 .nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   list-style-type: none;
 }
 .nav a.mid {
@@ -67,9 +68,6 @@ h2 {
 
 .logo {
   margin-right: 94px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .logo .gem {
   font-size: 27px;
@@ -87,7 +85,6 @@ h2 {
   gap: 28px;
 }
 .logo_list2 .shop_tag {
-  display: flex;
   gap: 10px;
 }
 .logo_list2 .shop_tag .fa {
@@ -95,14 +92,13 @@ h2 {
   color: #393d50;
 }
 .logo_list2 .shop_tag .tag {
-  display: flex;
   gap: 0;
 }
 .logo_list2 .shop_tag .tag .triangle {
   width: 0;
   height: 0;
   border-top: 9px solid transparent;
-  border-right: 18px solid #00bcd4;
+  border-right: 13px solid #00bcd4;
   border-bottom: 9px solid transparent;
 }
 .logo_list2 .shop_tag .tag .square {
@@ -157,9 +153,6 @@ h2 {
   margin-left: 8px;
 }
 .table .detail .row .close_cell {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 0 36px;
 }
 .table .detail .row .close_cell .close_btn {
@@ -221,11 +214,6 @@ h2 {
   align-items: center;
   border: 1px solid #dfe5e8;
 }
-.table .detail .row .quantity_col .quantity div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .table .detail .row .quantity_col .quantity span {
   color: #afb9be;
 }
@@ -256,13 +244,10 @@ h2 {
 .table .detail .last_row td {
   padding: 24px;
 }
-.table .detail .last_row .btn {
-  display: flex;
-}
 .table .detail .last_row .btn input {
   width: 276px;
   text-transform: capitalize;
-  padding: 20px 24px;
+  padding: 17px 24px;
   border: 1px solid #dfe5e8;
   background: #f5f7f6;
 }
@@ -271,7 +256,7 @@ h2 {
 }
 .table .detail .last_row .btn .apply {
   margin-left: 24px;
-  padding: 16px 28px;
+  padding: 0 28px;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -305,9 +290,6 @@ h2 {
   border-color: #3498db;
 }
 .table .detail .last_row .btn .checkout {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-left: 25px;
   width: 200px;
   text-transform: uppercase;
@@ -362,7 +344,7 @@ h2 {
 .ship_total .ship button {
   margin-top: 18px;
   width: 210px;
-  padding: 16px 18px;
+  padding: 12px 0;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -380,11 +362,18 @@ h2 {
 .ship_total .total table {
   width: 568px;
 }
-.ship_total .total .left,
-.ship_total .total .right {
+.ship_total .total .left {
   width: 50%;
-  padding: 23px 25px;
+  padding: 18px 25px;
   color: #72838e;
+}
+.ship_total .total .right {
+  padding-left: 23px;
+  color: #72838e;
+}
+.ship_total .total .ship_handling {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .ship_total .total .ship_handle {
   display: block;
@@ -394,7 +383,7 @@ h2 {
   text-transform: capitalize;
 }
 .ship_total .total .second {
-  margin: 16px 0;
+  margin: 8px 0;
 }
 .ship_total .total p {
   margin-left: 23px;
@@ -456,9 +445,6 @@ h2 {
 }
 
 .product {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-top: 140px;
 }
 .product h2 {
@@ -523,8 +509,8 @@ h2 {
   z-index: 1;
 }
 .product .cards .card .content {
-  padding: 27px 0;
-  line-height: 30px;
+  padding: 20px 0;
+  line-height: 25px;
   text-align: center;
 }
 .product .cards .card .content .name {
@@ -536,11 +522,7 @@ h2 {
 }
 
 .ft {
-  display: flex;
   font-size: 14px;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
   padding: 44px 0;
   background: #181828;
   margin-top: 148px;
