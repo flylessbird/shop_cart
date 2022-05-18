@@ -1,0 +1,16 @@
+@media only screen and (max-width: 1200px) {
+  .nav {
+    justify-content: space-between;
+    a {
+      &.icon {
+        display: block;
+        // float: right;
+        color: $black;
+      }
+    }
+    ul:not(:nth-child(1)) {
+      display: none;
+    }
+  }
+//   
+}

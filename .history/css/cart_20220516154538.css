@@ -1,0 +1,21 @@
+span {
+  width: 80px;
+  height: 50px;
+  background: blue;
+  display: block;
+  margin: auto;
+  position: relative;
+}
+
+span::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-right: 30px solid blue;
+  position: absolute;
+  right: 100%;
+  top: 0;
+}

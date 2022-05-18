@@ -1,0 +1,30 @@
+.box {
+  text-align: center;
+  position: relative;
+  line-height: 100px;
+  background: #fff;
+  height: 100px;
+  width: 300px;
+}
+/* create bd */
+/* top bd from l to r */
+.box:after {
+  background: linear-gradient(
+    to right,
+    /* 0-25 */
+    #bcbcbc 25%,
+    /* 25-50 */
+    #ffcd02 25%,
+    #ffcd02 50%,
+    
+    #e84f47 50%,
+    #e84f47 75%,
+    #65c1ac 75%
+  );
+  position: absolute;
+  content: "";
+  height: 4px;
+  right: 0;
+  left: 0;
+  top: 0;
+}

@@ -1,0 +1,25 @@
+@import "reset";
+@import "var";
+@import "mixin";
+.ft {
+  font-size: 14px;
+
+  .text {
+    .copy {
+      color: $grey_copy;
+    }
+    .theme {
+      color: $blue_theme;
+    }
+  }
+  .ft_option {
+    margin-left: 194px;
+    color: $grey_ava;
+    
+    ul {
+      padding: 21px;
+    }
+  }
+  img {
+  }
+}

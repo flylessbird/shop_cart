@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&family=Source+Sans+Pro:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="/fontawesome/css/all.min.css"> -->
+    <link rel="stylesheet" href="/css/ship_total.css" />
+  </head>
+  <div class="container">
+    <section class="ship_total">
+      <div class="ship">
+        <h2>calculate shipping</h2>
+        <table>
+          <form action="">
+            <tr>
+              <td colspan="2">
+                <select name="">
+                  <option value="" disabled selected hidden>
+                    Select Your Country
+                  </option>
+                  <option value="Vietnam">Vietnam</option>
+                  <option value="India">India</option>
+                  <option value="Japan">Japan</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" placeholder="State/Country" />
+              </td>
+              <td>
+                <input class="zip" type="text" placeholder="Postcode/Zip" />
+              </td>
+            </tr>
+            <tr>
+              <td><button>update totals</button></td>
+            </tr>
+          </form>
+        </table>
+      </div>
+      <div class="total">
+        <h2>cart totals</h2>
+        <table>
+          <tr>
+            <td class="left">subtotal</td>
+            <td class="right subtotal_price">$1285.99</td>
+          </tr>
+          <tr>
+            <td class="left">shipping and handling</td>
+            <td class="right ship_handling">
+              <label class="ship_handle"
+                ><p style="border: 1px solid">flat rate: $3.99</p>
+                <input type="radio" checked="checked" name="radio" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="ship_handle second"
+                ><p>free shipping</p>
+                <input type="radio" name="radio" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="ship_handle"
+                ><p>flat rate: $12.99</p>
+                <input type="radio" name="radio" />
+                <span class="checkmark"></span>
+              </label>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="left">total</td>
+            <td class="right total_price">$2015.00</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </div>
+</html>
